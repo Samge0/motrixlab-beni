@@ -1,15 +1,20 @@
 # BENI velocity-flat for MotrixLab
 
-> [🇨🇳 中文文档](README.md) | 🇺🇸 English (this file)
+> [中文>>](README.md) | 🇺🇸 English (this file)
 
 A BENI two-wheel-legged robot velocity-tracking task for MotrixLab,
 ported from Mondo-Robotics/open-beni (mjlab, MIT) to the MotrixLab
 direct-workflow (FastSAC).
 
-- Upstream project: https://github.com/Mondo-Robotics/open-beni (MIT)
-- Target framework: https://github.com/Motphys/MotrixLab (Apache-2.0)
+- Upstream project: [https://github.com/Mondo-Robotics/open-beni (MIT)](https://github.com/Mondo-Robotics/open-beni)
+- Target framework: [https://github.com/Motphys/MotrixLab (Apache-2.0)](https://github.com/Motphys/MotrixLab)
 - Verified against: MotrixLab 0.4.0b0 and main @ 5bd0054, Python 3.10,
   CUDA 12.x, a single consumer GPU (8 GB, alongside other GPU jobs)
+
+
+https://github.com/user-attachments/assets/a136308f-68c9-4f77-888c-c8308d992022
+
+
 
 ## Contents
 
@@ -158,7 +163,7 @@ stiffness/springref XML attributes, so the spring must stay in code.
 ## License
 
 MIT for this port. BENI assets and reward design originate from
-Mondo-Robotics/open-beni (MIT). MotrixLab itself is Apache-2.0; overlay
+[Mondo-Robotics/open-beni (MIT)](https://github.com/Mondo-Robotics/open-beni). [MotrixLab](https://github.com/Motphys/MotrixLab) itself is Apache-2.0; overlay
 files only touch the extension points MotrixLab provides for new
 robots/tasks and do not modify MotrixLab sources beyond the two
 registration import lines.
