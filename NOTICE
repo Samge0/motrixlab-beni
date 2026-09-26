@@ -1,0 +1,32 @@
+Port provenance and attribution
+===============================
+
+This distribution packages a third-party port ("BENI velocity-flat for
+MotrixLab"). All ported material keeps its upstream provenance:
+
+1. BENI robot description (MJCF, meshes, textures), reward structure,
+   observation/action layout, and the passive knee spring model originate
+   from:
+       Mondo-Robotics/open-beni
+       https://github.com/Mondo-Robotics/open-beni
+       Copyright (c) 2026 Open Beni
+       SPDX-License-Identifier: MIT
+   Individual ported files carry their own header notices where practical.
+
+2. The adaptation targets MotrixLab by Motphys Technology:
+       https://github.com/Motphys/MotrixLab
+       Apache License 2.0
+   This distribution contains no MotrixLab source files; it adds new
+   robot/task modules through MotrixLab's extension points and appends two
+   import lines to registration __init__.py files during installation.
+
+3. Trained policy checkpoints in overlay/runs/ were produced with this port
+   on public hardware; they are distributed under the same MIT license as
+   the port. They embed no third-party weights beyond this project's own
+   training run.
+
+4. The linearized knee spring constants were derived by least-squares fit of
+   the upstream nonlinear spring curve over the knee's standing range.
+
+If you redistribute, keep this NOTICE, the LICENSE, and the upstream
+copyright headers in ported source files.

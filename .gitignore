@@ -1,0 +1,8 @@
+# artifacts that must never enter the repository
+runs/
+deliverables/
+logs*
+*.raw.mp4
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
